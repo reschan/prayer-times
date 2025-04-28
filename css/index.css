@@ -1,0 +1,133 @@
+.flex-vertical-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-horizontal-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-padding-1 {
+    flex: 1 1 auto;
+}
+
+.flex-padding-2 {
+    flex: 2 2 auto;
+}
+
+.flex-padding-3 {
+    flex: 3 3 auto;
+}
+
+.flex-padding-4 {
+    flex: 4 4 auto;
+}
+
+.border-grid {
+    border: solid;
+    border-top: 0px;
+    border-left: 0px; 
+    box-sizing: border-box; 
+     
+    text-align: center;
+}
+
+.border-grid > p {
+    text-align: left;
+    min-width: 5rem;
+    margin-left: 1rem;
+}
+
+/*
+input {
+    height: 2.5rem;
+    width: 20rem;
+    margin: .5rem;
+    padding: .25rem;
+}
+
+button {
+    height: 5rem;
+    margin: 0rem;
+    padding: .25rem;
+}
+*/
+.flex-responsive-container {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .flex-responsive-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 20rem;
+        height: 2.5rem;
+        margin: 0rem;
+        padding: 0rem;
+        box-sizing: border-box;
+    }
+
+    select {
+        width: 20rem;
+        height: 2.5rem;
+        margin: .5rem;
+        padding: .25rem;
+    }
+
+    button {
+        height: 5rem;
+        padding: .5rem;
+    }
+
+    .result-grid {
+        width: 50rem;
+    }
+}
+
+/* Responsive styles for vertical phone screens */
+@media (max-width: 768px) {
+    .flex-responsive-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        height: 2.5rem;
+        margin: .5rem 0;
+        padding: .25rem;
+        box-sizing: border-box;
+    }
+
+    select {
+        width: 100%;
+        height: 2.5rem;
+        margin: .5rem 0;
+        padding: .25rem;
+    }
+
+    button {
+        width: 100%;
+        height: 4rem;
+        margin: .5rem 0;
+        padding: .25rem;
+    }
+
+    .result-grid {
+        width: 100%;
+    }
+
+    .res-padding {
+        display: none;
+    }
+
+    .res-display {
+        padding: 1rem;
+    }
+}

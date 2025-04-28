@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <script src="js/index.js"></script> 
+    <link rel="stylesheet" href="/css/normalize.css"> 
+    <link rel="stylesheet" href="/css/index.css"> 
+</head>
+<body class="flex-vertical-container" style="background-color: #222222; color:white">
+    <div class="flex-horizontal-container" style="padding-top: 25vh;">
+        <div class="flex-padding-2 res-padding"></div>
+        <div class="flex-padding-3 flex-vertical-container res-display" style="justify-content: center; align-items: center;">
+            <div class="flex-responsive-container">
+                <input type="text" id="inp-city" placeholder="City">
+                <select type="text" id="sel-country" placeholder="Country">
+                    <option value="none">Country</option>
+                </select>
+                <button type="button" style="height: 2.5rem;" onclick="resolve_input()">Search</button>
+            </div>
+            <div class="flex-vertical-container result-grid" style="justify-content: center; align-items: center;">
+                <h3 id="query-time">Query time:</h3>
+                <h3 id="timezone" style="margin-top: 0px;">Timezone:</h3>
+                <div id="result-wrapper" style="border: solid; border-right: 0px; border-bottom: 0px; width: 100%;">
+                    <div class="flex-horizontal-container" style="">
+                        <div class="flex-padding-4 border-grid">
+                            <p style="width: auto;">Timing</p>
+                        </div>
+                        <div class="flex-padding-2 border-grid">
+                            <p style="width: auto;">Time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-padding-2 res-padding"></div>
+    </div>
+</body>
+</html>
