@@ -1,8 +1,8 @@
 /* reference api url https://api.aladhan.com/v1/timingsByCity/01-01-2025?city=London&country=GB*/
 
-const selectedTiming = ["Fajr", "Sunrise", "Duhur", "Asr", "Maghrib", "Isha", "Midnight"];
+const selectedTiming = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha", "Midnight"];
 
-const timingTranslation = {"Fajr": "Dawn", "Sunrise": "Morning", "Duhur": "Noon", "Asr": "Afternoon", "Maghrib": "Evening", "Isha": "Night", "Midnight": "Midnight"}
+const timingTranslation = {"Fajr": "Dawn", "Sunrise": "Morning", "Dhuhr": "Noon", "Asr": "Afternoon", "Maghrib": "Evening", "Isha": "Night", "Midnight": "Midnight"}
 
 const isoCountryCodes = [
     "AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AQ", "AR", "AS", "AT", "AU", "AW", "AX", "AZ",
@@ -45,7 +45,7 @@ const isoCountryNames = {
     "GN": "Guinea", "GP": "Guadeloupe", "GQ": "Equatorial Guinea", "GR": "Greece", "GS": "South Georgia",
     "GT": "Guatemala", "GU": "Guam", "GW": "Guinea-Bissau", "GY": "Guyana", "HK": "Hong Kong",
     "HM": "Heard Island and McDonald Islands", "HN": "Honduras", "HR": "Croatia", "HT": "Haiti",
-    "HU": "Hungary", "ID": "Indonesia", "IE": "Ireland", "IL": "Israel", "IM": "Isle of Man",
+    "HU": "Hungary", "ID": "Indonesia", "IE": "Ireland", "IM": "Isle of Man",
     "IN": "India", "IO": "British Indian Ocean Territory", "IQ": "Iraq", "IR": "Iran", "IS": "Iceland",
     "IT": "Italy", "JE": "Jersey", "JM": "Jamaica", "JO": "Jordan", "JP": "Japan", "KE": "Kenya",
     "KG": "Kyrgyzstan", "KH": "Cambodia", "KI": "Kiribati", "KM": "Comoros", "KN": "Saint Kitts and Nevis",
