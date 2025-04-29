@@ -2,6 +2,8 @@
 
 const selectedTiming = ["Fajr", "Sunrise", "Duhur", "Asr", "Maghrib", "Isha", "Midnight"];
 
+const timingTranslation = {"Fajr": "Dawn", "Sunrise": "Morning", "Duhur": "Noon", "Asr": "Afternoon", "Maghrib": "Evening", "Isha": "Night", "Midnight": "Midnight"}
+
 const isoCountryCodes = [
     "AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AQ", "AR", "AS", "AT", "AU", "AW", "AX", "AZ",
     "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BL", "BM", "BN", "BO", "BQ", "BR", "BS",
@@ -173,7 +175,7 @@ function populate_data(json) {
         timing = document.createElement("div");
         timing.className = "flex-padding-4 border-grid";
         timingText = document.createElement("p");
-        timingText.textContent = key;
+        timingText.textContent = timingTranslation[key];
         timingText.style.width = "auto";
         timing.appendChild(timingText);
 
