@@ -76,6 +76,12 @@ const isoCountryNames = {
     "ZA": "South Africa", "ZM": "Zambia", "ZW": "Zimbabwe"
 };
 
+isoCountryCodes.sort((a, b) => {
+    const nameA = isoCountryNames[a];
+    const nameB = isoCountryNames[b];
+    return nameA.localeCompare(nameB);
+});
+
 /* initialize dropdowns */
 function populate_dropdown() {
     country_dropdown = document.getElementById("sel-country")
